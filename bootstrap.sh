@@ -6,8 +6,8 @@ mkdir "$projectFolder";
 cd "$projectFolder";
 mkdir lib;
 cd lib;
-#~ wget http://code.jquery.com/jquery.min.js
-#~ wget http://documentcloud.github.com/underscore/underscore.js
+wget http://code.jquery.com/jquery.min.js
+wget http://documentcloud.github.com/underscore/underscore.js
 cd ..
 echo $htmltemplate;
 echo -e $htmltemplate|sed -e s/{{title}}/"$project"/g >index.html
