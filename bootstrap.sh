@@ -1,5 +1,5 @@
 #!/bin/bash
-htmltemplate=`echo "<!DOCTYPE html>\\n<html>\\n\\t<head>\\n\\t\\t<title>{{title}}</title>\\n\\t\\t<script type="text/javascript" src="lib/jquery.min.js"></script>\\n\\t\\t<script type="text/javascript" src="lib/underscore.js"></script>\\n\\t\\t<script type="text/javascript" src="script.js"></script>\\n\\t\\t<link rel="stylesheet" type="text/css" href="style.css" />\\n\\t</head>\\n\\t<body>\\n\\t\\t<h1>{{title}}</h1>\\n\\t</body>\\n</html>"`;
+htmltemplate=`echo "<!DOCTYPE html>\\n<html>\\n\\t<head>\\n\\t\\t<title>{{title}}</title>\\n\\t\\t<script type=\"text/javascript\" src=\"lib/jquery.min.js\"></script>\\n\\t\\t<script type=\"text/javascript\" src=\"lib/underscore.js\"></script>\\n\\t\\t<script type=\"text/javascript\" src=\"script.js\"></script>\\n\\t\\t<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />\\n\\t</head>\\n\\t<body>\\n\\t\\t<h1>{{title}}</h1>\\n\\t</body>\\n</html>"`;
 project=`zenity --entry "Project Name"`
 projectFolder=`echo $project|sed s/\\\\W/-/g|awk '{print tolower($0)}'`;
 mkdir "$projectFolder";
